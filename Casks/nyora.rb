@@ -1,6 +1,6 @@
 cask "nyora" do
-  version "1.0"
-  sha256 "51f1d4f68a183eb83a73ee51169c658dbb3342be00915c7d175430aa5eda8005"
+  version "2.0.6"
+  sha256 "47431d843eda629734efaba9644d9054171fe2b808a8363ed1e62d10c295eb83"
 
   url "https://github.com/Hasan72341/nyora-mac/releases/download/v#{version}/Nyora-#{version}.dmg"
   name "Nyora"
