@@ -38,7 +38,7 @@ A free, open-source, ad-free manga reader for your Mac — with on-device AI pag
 - **It just reads — no friction.** No account to start, no ads, no paywall. Open it and read.
 - **Translation that stays on your Mac.** Whole-page AI translation runs on-device with Apple Vision and a bundled MangaOCR model — your reading never leaves the machine, and it works offline once a page is loaded.
 - **Yours to keep.** Download chapters as portable CBZ archives you actually own, ready for planes, trains and dead zones.
-- **One library, every device.** Optional free Google sign-in syncs your library, history and progress across every Nyora platform — resume on your Mac exactly where your phone left off.
+- **One library, every device.** Optional free Nyora Cloud sync — an email + password account syncs your library, history and progress across every Nyora platform — resume on your Mac exactly where your phone left off.
 - **Open and auditable.** Apache-2.0, no analytics SDKs, no behavioural tracking. The code is there for anyone to read.
 
 **Install in one line:**
@@ -162,7 +162,7 @@ Hundreds of built-in sources covering manga, manhwa and manhua, source-compatibl
 
 ### Cloud Sync
 
-Free cloud sync. Sign in with Google and your library, categories, history, bookmarks and reading progress follow you across every Nyora platform — pick up on your Mac exactly where your phone left off. No paid tier, no separate account to create.
+Free cloud sync. Create a free Nyora Cloud account (email + password) and your library, categories, history, bookmarks and reading progress follow you across every Nyora platform — pick up on your Mac exactly where your phone left off. No paid tier, no separate account to create.
 
 ### Privacy & Open Source
 
@@ -175,7 +175,7 @@ Free cloud sync. Sign in with Google and your library, categories, history, book
 | Whole-page AI translation (on-device, Apple Vision + MangaOCR) | Yes |
 | Offline translation once a page is loaded | Yes |
 | Offline downloads · CBZ where applicable | Yes |
-| Free cloud sync (Google sign-in) | Yes |
+| Free cloud sync (Nyora Cloud account) | Yes |
 | Built-in sources | Large curated set |
 | Ads / tracking / analytics SDKs | None |
 | Account required to read | No |
@@ -226,10 +226,10 @@ This build targets Apple Silicon only; an Intel build is not currently available
 ## FAQ
 
 **Is it really free?**
-Yes — 100% free and ad-free, with no paid tier and no account required to read. Optional cloud sync uses a free Google sign-in. There is nothing to buy and nothing to unlock.
+Yes — 100% free and ad-free, with no paid tier and no account required to read. Optional cloud sync uses a free Nyora Cloud account (email + password). There is nothing to buy and nothing to unlock.
 
 **Do I need an account?**
-No. You can install and read without signing in to anything. An account (free Google sign-in) is only needed if you *want* cloud sync across devices — it is entirely optional.
+No. You can install and read without signing in to anything. An account (free Nyora Cloud email + password) is only needed if you *want* cloud sync across devices — it is entirely optional.
 
 **Will my data be private?**
 Yes. There are no ads, no analytics SDKs and no behavioural tracking. Your library and reading progress live on your Mac; cloud sync is opt-in. Translation runs on-device, so the pages you read are never sent anywhere or used to train any model. Being open source under Apache-2.0, all of this is auditable.
