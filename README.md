@@ -250,7 +250,7 @@ Yes. Downloaded chapters read fully offline, and because the translation pipelin
 It runs entirely on your Mac — Apple Vision OCR plus a bundled MangaOCR Core ML model — so text recognition never leaves the device and is never used to train any model. Press `⌘T` while reading for a side-by-side original/translated sheet.
 
 **Does cloud sync share my library with my other devices?**
-Yes — signing in with Google syncs your library, categories, history, bookmarks and reading progress across every Nyora platform, so you resume on your Mac where your phone left off.
+Yes — signing in to your Nyora Cloud account (email and password) syncs your library, categories, history, bookmarks and reading progress across every Nyora platform, so you resume on your Mac where your phone left off.
 
 **Why Apple Silicon only?**
 The published build bundles an arm64 runtime; an Intel (x86_64) build is not currently available.
