@@ -2,11 +2,11 @@ cask "nyora" do
   version "2.0.6"
   sha256 "47431d843eda629734efaba9644d9054171fe2b808a8363ed1e62d10c295eb83"
 
-  url "https://github.com/Hasan72341/nyora-mac/releases/download/v#{version}/Nyora-#{version}.dmg",
-      verified: "github.com/Hasan72341/nyora-mac/"
+  url "https://github.com/Nyora-Manga/nyora-mac/releases/download/v#{version}/Nyora-#{version}.dmg",
+      verified: "github.com/Nyora-Manga/nyora-mac/"
   name "Nyora"
   desc "AI-powered manga reader"
-  homepage "https://nyora.pages.dev"
+  homepage "https://nyora.xyz"
 
   # Always tracks the newest Nyora for macOS GitHub release, so `brew livecheck`
   # (and the auto-bump tooling) flags this cask the moment a newer version ships.

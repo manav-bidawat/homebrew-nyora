@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://nyora.pages.dev/icon.png" width="120" alt="Nyora icon" />
+<img src="https://nyora.xyz/icon.png" width="120" alt="Nyora icon" />
 
 # Nyora — Homebrew Tap (macOS)
 
@@ -14,15 +14,15 @@ A free, open-source, ad-free manga reader for your Mac — with on-device AI pag
 </p>
 
 <p>
-  <a href="https://github.com/Hasan72341/homebrew-nyora"><img alt="Homebrew Cask" src="https://img.shields.io/badge/Homebrew-cask-%23F7B731?logo=homebrew&logoColor=white" /></a>
-  <a href="https://github.com/Hasan72341/nyora-mac"><img alt="App repo" src="https://img.shields.io/badge/app-nyora--mac-blue?logo=apple&logoColor=white" /></a>
-  <a href="https://github.com/Hasan72341/nyora-mac"><img alt="License Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-green.svg" /></a>
-  <a href="https://github.com/Hasan72341/homebrew-nyora/pulls"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a>
+  <a href="https://github.com/Nyora-Manga/homebrew-nyora"><img alt="Homebrew Cask" src="https://img.shields.io/badge/Homebrew-cask-%23F7B731?logo=homebrew&logoColor=white" /></a>
+  <a href="https://github.com/Nyora-Manga/nyora-mac"><img alt="App repo" src="https://img.shields.io/badge/app-nyora--mac-blue?logo=apple&logoColor=white" /></a>
+  <a href="https://github.com/Nyora-Manga/nyora-mac"><img alt="License Apache-2.0" src="https://img.shields.io/badge/license-Apache--2.0-green.svg" /></a>
+  <a href="https://github.com/Nyora-Manga/homebrew-nyora/pulls"><img alt="PRs welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a>
 </p>
 
 <p>
-  <a href="https://github.com/Hasan72341/nyora-mac/releases/latest"><img alt="Download DMG" src="https://img.shields.io/badge/Download-.dmg-000000?style=for-the-badge&logo=apple&logoColor=white" /></a>
-  <a href="https://nyora.pages.dev"><img alt="Website" src="https://img.shields.io/badge/Website-nyora.pages.dev-FF4655?style=for-the-badge&logo=githubpages&logoColor=white" /></a>
+  <a href="https://github.com/Nyora-Manga/nyora-mac/releases/latest"><img alt="Download DMG" src="https://img.shields.io/badge/Download-.dmg-000000?style=for-the-badge&logo=apple&logoColor=white" /></a>
+  <a href="https://nyora.xyz"><img alt="Website" src="https://img.shields.io/badge/Website-nyora.xyz-FF4655?style=for-the-badge&logo=githubpages&logoColor=white" /></a>
 </p>
 
 </div>
@@ -68,9 +68,9 @@ brew install --cask Hasan72341/nyora/nyora
 
 ## Overview
 
-A Homebrew **tap** is a third-party repository of formulae and casks that extends Homebrew beyond its core catalogue. A **cask** installs a pre-built macOS application bundle (a `.app`) rather than compiling from source. The cask here, named `nyora`, declares where to download the latest Nyora build, the checksum to verify it against, and where to place `Nyora.app` (in `/Applications`). Because it tracks releases of [`Hasan72341/nyora-mac`](https://github.com/Hasan72341/nyora-mac), `brew upgrade` pulls new versions as they ship — no manual re-downloading from GitHub Releases.
+A Homebrew **tap** is a third-party repository of formulae and casks that extends Homebrew beyond its core catalogue. A **cask** installs a pre-built macOS application bundle (a `.app`) rather than compiling from source. The cask here, named `nyora`, declares where to download the latest Nyora build, the checksum to verify it against, and where to place `Nyora.app` (in `/Applications`). Because it tracks releases of [`Hasan72341/nyora-mac`](https://github.com/Nyora-Manga/nyora-mac), `brew upgrade` pulls new versions as they ship — no manual re-downloading from GitHub Releases.
 
-This repo holds **no app code**; it is purely a distribution channel — a single cask that points at the release artefacts published by [`nyora-mac`](https://github.com/Hasan72341/nyora-mac). The payoff is a clean, scriptable install and one-command updates. More at [nyora.pages.dev](https://nyora.pages.dev).
+This repo holds **no app code**; it is purely a distribution channel — a single cask that points at the release artefacts published by [`nyora-mac`](https://github.com/Nyora-Manga/nyora-mac). The payoff is a clean, scriptable install and one-command updates. More at [nyora.xyz](https://nyora.xyz).
 
 ## Install
 
@@ -89,7 +89,7 @@ brew install --cask nyora
 
 Both routes do the same thing. The single-line form uses Homebrew's fully-qualified `<user>/<tap>/<cask>` syntax to add the tap and install the cask in one step. The two-step form registers the tap explicitly first — handy if you want to inspect it before installing, or install more casks from it later.
 
-**Is this safe to run?** Yes. Homebrew downloads the build straight from a [`nyora-mac`](https://github.com/Hasan72341/nyora-mac) GitHub Release and verifies it against the checksum pinned in the cask before installing — if the file were tampered with, the install would abort. The cask itself is a short, readable Ruby file you can [inspect in this repo](https://github.com/Hasan72341/homebrew-nyora/blob/main/Casks/nyora.rb) before running anything. No account, no ads, no telemetry.
+**Is this safe to run?** Yes. Homebrew downloads the build straight from a [`nyora-mac`](https://github.com/Nyora-Manga/nyora-mac) GitHub Release and verifies it against the checksum pinned in the cask before installing — if the file were tampered with, the install would abort. The cask itself is a short, readable Ruby file you can [inspect in this repo](https://github.com/Nyora-Manga/homebrew-nyora/blob/main/Casks/nyora.rb) before running anything. No account, no ads, no telemetry.
 
 ## First Launch on macOS
 
@@ -111,7 +111,7 @@ brew install --cask --no-quarantine nyora
 
 > Apple Silicon only for now (the build bundles an arm64 runtime). Intel Macs are not currently supported.
 
-The cask tracks releases of [`Hasan72341/nyora-mac`](https://github.com/Hasan72341/nyora-mac).
+The cask tracks releases of [`Hasan72341/nyora-mac`](https://github.com/Nyora-Manga/nyora-mac).
 
 ## Updating
 
@@ -146,7 +146,7 @@ brew uninstall --zap --cask nyora
 
 ## What You Get
 
-These are the core pillars of the Nyora reader you install through this tap. They are properties of the macOS app itself — see [`nyora-mac`](https://github.com/Hasan72341/nyora-mac) for full detail and screenshots.
+These are the core pillars of the Nyora reader you install through this tap. They are properties of the macOS app itself — see [`nyora-mac`](https://github.com/Nyora-Manga/nyora-mac) for full detail and screenshots.
 
 ### Translate
 
@@ -189,7 +189,7 @@ When you run `brew install --cask Hasan72341/nyora/nyora`, Homebrew:
 
 1. Clones (or updates) this tap repository so it has the local `nyora` cask definition.
 2. Reads the cask to learn the current version, the download URL of the macOS build, and the checksum to verify against.
-3. Downloads the artefact published on a [`nyora-mac`](https://github.com/Hasan72341/nyora-mac) GitHub Release and verifies its integrity.
+3. Downloads the artefact published on a [`nyora-mac`](https://github.com/Nyora-Manga/nyora-mac) GitHub Release and verifies its integrity.
 4. Installs `Nyora.app` into `/Applications`.
 
 Subsequent `brew upgrade` runs repeat steps 2–4 whenever a newer `nyora-mac` release exists. Because everything is declarative and version-pinned, installs are reproducible and scriptable — ideal for dotfiles, provisioning scripts, and `Brewfile`-based setups.
@@ -259,12 +259,12 @@ The published build bundles an arm64 runtime; an Intel (x86_64) build is not cur
 
 | Platform | Repo | Get it |
 |---|---|---|
-| Android | [nyora-android](https://github.com/Hasan72341/nyora-android) | [APK](https://github.com/Hasan72341/nyora-android/releases/latest) |
-| macOS **(you are here)** | [nyora-mac](https://github.com/Hasan72341/nyora-mac) | [.dmg / brew](https://github.com/Hasan72341/nyora-mac/releases/latest) |
-| Windows | [nyora-windows](https://github.com/Hasan72341/nyora-windows) | [.exe (x64/ARM64)](https://github.com/Hasan72341/nyora-windows/releases/latest) |
-| Linux | [nyora-linux](https://github.com/Hasan72341/nyora-linux) | [deb · rpm · curl](https://github.com/Hasan72341/nyora-linux/releases/latest) |
-| iOS / iPadOS | [nyora-ios](https://github.com/Hasan72341/nyora-ios) | [sideload IPA](https://github.com/Hasan72341/nyora-ios/releases/latest) |
-| Web | [nyora-web](https://github.com/Hasan72341/nyora-web) | [nyoraweb.pages.dev](https://nyoraweb.pages.dev) |
+| Android | [nyora-android](https://github.com/Nyora-Manga/nyora-android) | [APK](https://github.com/Nyora-Manga/nyora-android/releases/latest) |
+| macOS **(you are here)** | [nyora-mac](https://github.com/Nyora-Manga/nyora-mac) | [.dmg / brew](https://github.com/Nyora-Manga/nyora-mac/releases/latest) |
+| Windows | [nyora-windows](https://github.com/Nyora-Manga/nyora-windows) | [.exe (x64/ARM64)](https://github.com/Nyora-Manga/nyora-windows/releases/latest) |
+| Linux | [nyora-linux](https://github.com/Nyora-Manga/nyora-linux) | [deb · rpm · curl](https://github.com/Nyora-Manga/nyora-linux/releases/latest) |
+| iOS / iPadOS | [nyora-ios](https://github.com/Nyora-Manga/nyora-ios) | [sideload IPA](https://github.com/Nyora-Manga/nyora-ios/releases/latest) |
+| Web | [nyora-web](https://github.com/Nyora-Manga/nyora-web) | [nyora.xyz](https://nyora.xyz) |
 
 ## Contributing
 
@@ -272,12 +272,12 @@ This tap is small and friendly to work on — and you don't need to be a packagi
 
 ### Ways to contribute (all skill levels)
 
-- **Report an install or update problem.** A broken download URL, a checksum mismatch, a stale version, or a Gatekeeper quirk specific to packaging — [open an issue here](https://github.com/Hasan72341/homebrew-nyora/issues). Clear bug reports are one of the most valuable contributions.
+- **Report an install or update problem.** A broken download URL, a checksum mismatch, a stale version, or a Gatekeeper quirk specific to packaging — [open an issue here](https://github.com/Nyora-Manga/homebrew-nyora/issues). Clear bug reports are one of the most valuable contributions.
 - **Improve these docs.** Spotted a confusing step, a typo, or a fix that worked for you that isn't written down? Doc PRs are small, high-value, and a great first contribution.
 - **Test a release.** Install the latest build on your Mac and confirm `brew install`, `brew upgrade` and the first-launch flow behave as documented. Reporting back either way helps.
-- **Star and share.** If Nyora made your reading better, starring [this tap](https://github.com/Hasan72341/homebrew-nyora) and the [app repo](https://github.com/Hasan72341/nyora-mac) genuinely helps other readers find the project — no code required.
+- **Star and share.** If Nyora made your reading better, starring [this tap](https://github.com/Nyora-Manga/homebrew-nyora) and the [app repo](https://github.com/Nyora-Manga/nyora-mac) genuinely helps other readers find the project — no code required.
 
-> **Working on the reader itself?** Bugs and feature requests about the app — translation, sources, sync, UI — belong on [`nyora-mac`](https://github.com/Hasan72341/nyora-mac), which is where the app is being built. This repo is only the macOS distribution channel.
+> **Working on the reader itself?** Bugs and feature requests about the app — translation, sources, sync, UI — belong on [`nyora-mac`](https://github.com/Nyora-Manga/nyora-mac), which is where the app is being built. This repo is only the macOS distribution channel.
 
 ### Where things live
 
@@ -295,7 +295,7 @@ This is a single-cask tap, so there isn't much to map:
 
 ### How the cask updates
 
-The cask in `Casks/nyora.rb` simply tracks releases of [`nyora-mac`](https://github.com/Hasan72341/nyora-mac). When a new app version ships, the bump is small and mechanical: update the `version`, refresh the `sha256` to match the new release artefact, and confirm the `url` resolves. A typical PR touches only those lines. If you'd like to take an update PR, point it at the relevant `nyora-mac` release tag in your description so it's easy to verify against the published checksum.
+The cask in `Casks/nyora.rb` simply tracks releases of [`nyora-mac`](https://github.com/Nyora-Manga/nyora-mac). When a new app version ships, the bump is small and mechanical: update the `version`, refresh the `sha256` to match the new release artefact, and confirm the `url` resolves. A typical PR touches only those lines. If you'd like to take an update PR, point it at the relevant `nyora-mac` release tag in your description so it's easy to verify against the published checksum.
 
 ### PR & issue etiquette
 
@@ -309,7 +309,7 @@ Thank you for being here. Whether you file a bug, fix a typo, or just star the r
 
 ## License
 
-The Nyora macOS app is licensed under **Apache-2.0**. See [`Hasan72341/nyora-mac`](https://github.com/Hasan72341/nyora-mac) for full details.
+The Nyora macOS app is licensed under **Apache-2.0**. See [`Hasan72341/nyora-mac`](https://github.com/Nyora-Manga/nyora-mac) for full details.
 
 ## Credits
 
